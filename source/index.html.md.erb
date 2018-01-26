@@ -65,9 +65,9 @@ ScalikeJDBC 3.0 requires Java SE 8 or higher. If you still need to run your appl
 ```scala
 // Scala 2.10, 2.11, 2.12
 libraryDependencies ++= Seq(
-  "org.scalikejdbc" %% "scalikejdbc"       % "<%= version %>",
-  "com.h2database"  %  "h2"                % "<%= h2_version %>",
-  "ch.qos.logback"  %  "logback-classic"   % "<%= logback_version %>"
+  "org.scalikejdbc" %% "scalikejdbc"       % "<%= @version %>",
+  "com.h2database"  %  "h2"                % "<%= @h2_version %>",
+  "ch.qos.logback"  %  "logback-classic"   % "<%= @logback_version %>"
 )
 ```
 
@@ -78,9 +78,9 @@ See [ScalikeJDBC 2.x Documentation](/documentation/2.x/) for details.
 ```scala
 // Scala 2.10, 2.11, 2.12
 libraryDependencies ++= Seq(
-  "org.scalikejdbc" %% "scalikejdbc"               % "<%= v2_version %>",
-  "com.h2database"  %  "h2"                        % "<%= h2_version %>",
-  "ch.qos.logback"  %  "logback-classic"           % "<%= logback_version %>"
+  "org.scalikejdbc" %% "scalikejdbc"               % "<%= @v2_version %>",
+  "com.h2database"  %  "h2"                        % "<%= @h2_version %>",
+  "ch.qos.logback"  %  "logback-classic"           % "<%= @logback_version %>"
 )
 ```
 

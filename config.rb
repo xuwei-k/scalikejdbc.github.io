@@ -68,17 +68,8 @@ I18n.enforce_available_locales = false
 @v2_version = "2.5.2"
 @v1_version = "1.7.7"
 @v18_version = "1.8.2"
-
-set :version,        @latest_version
-set :latest_version, @latest_version
-set :latest_play_support_version, @latest_play_support_version
-set :v2_play_support_version,     @v2_play_support_version
-set :v2_version,        @v2_version
-set :v1_version,        @v1_version
-set :v18_version,       @v18_version
-set :v1_latest_version, @v1_version
-set :h2_version,        "1.4.196"
-set :logback_version,   "1.2.3"
+@h2_version = "1.4.196"
+@logback_version = "1.2.3"
 
 # Build-specific configuration
 configure :build do
@@ -100,7 +91,7 @@ end
 
 activate :deploy do |deploy|
   deploy.build_before = true
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.branch = 'master'
 end
 

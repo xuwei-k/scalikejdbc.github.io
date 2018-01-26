@@ -19,9 +19,9 @@ If you're still using Scala 2.9, you can't use `scalikejdbc-interpolation`.
 
 ```scala
 libraryDependencies ++= Seq(
-  "org.scalikejdbc" %% "scalikejdbc"       % "<%= version %>",
-  "com.h2database"  %  "h2"                % "<%= h2_version %>",
-  "ch.qos.logback"  %  "logback-classic"   % "<%= logback_version %>"
+  "org.scalikejdbc" %% "scalikejdbc"       % "<%= @version %>",
+  "com.h2database"  %  "h2"                % "<%= @h2_version %>",
+  "ch.qos.logback"  %  "logback-classic"   % "<%= @logback_version %>"
 )
 ```
 
@@ -39,10 +39,10 @@ Using `scalikejdbc-test` is highly recommended to improve your application.
 
 ```scala
 libraryDependencies ++= Seq(
-  "org.scalikejdbc" %% "scalikejdbc"        % "<%= version %>",
-  "org.scalikejdbc" %% "scalikejdbc-test"   % "<%= version %>"   % "test",
-  "com.h2database"  %  "h2"                 % "<%= h2_version %>",
-  "ch.qos.logback"  %  "logback-classic"    % "<%= logback_version %>"
+  "org.scalikejdbc" %% "scalikejdbc"        % "<%= @version %>",
+  "org.scalikejdbc" %% "scalikejdbc-test"   % "<%= @version %>"   % "test",
+  "com.h2database"  %  "h2"                 % "<%= @h2_version %>",
+  "ch.qos.logback"  %  "logback-classic"    % "<%= @logback_version %>"
 )
 ```
 
@@ -56,10 +56,10 @@ If you use `application.conf` as settings file, add `scalikejdbc-config` too.
 
 ```scala
 libraryDependencies ++= Seq(
-  "org.scalikejdbc" %% "scalikejdbc"         % "<%= version %>",
-  "org.scalikejdbc" %% "scalikejdbc-config"  % "<%= version %>",
-  "com.h2database"  %  "h2"                  % "<%= h2_version %>",
-  "ch.qos.logback"  %  "logback-classic"     % "<%= logback_version %>"
+  "org.scalikejdbc" %% "scalikejdbc"         % "<%= @version %>",
+  "org.scalikejdbc" %% "scalikejdbc-config"  % "<%= @version %>",
+  "com.h2database"  %  "h2"                  % "<%= @h2_version %>",
+  "ch.qos.logback"  %  "logback-classic"     % "<%= @logback_version %>"
 )
 ```
 

@@ -66,9 +66,9 @@ See [ScalikeJDBC 2.x Documentation](/) in detail.
 ```scala
 // Scala 2.10, 2.11
 libraryDependencies ++= Seq(
-  "org.scalikejdbc" %% "scalikejdbc"       % "<%= v2_version %>",
-  "com.h2database"  %  "h2"                % "<%= h2_version %>",
-  "ch.qos.logback"  %  "logback-classic"   % "<%= logback_version %>"
+  "org.scalikejdbc" %% "scalikejdbc"       % "<%= @v2_version %>",
+  "com.h2database"  %  "h2"                % "<%= @h2_version %>",
+  "ch.qos.logback"  %  "logback-classic"   % "<%= @logback_version %>"
 )
 ```
 
@@ -79,10 +79,10 @@ See [ScalikeJDBC 1.x Documentation](/documentation/1.x/) for details. Scala 2.9 
 ```scala
 // Scala 2.9, 2.10
 libraryDependencies ++= Seq(
-  "org.scalikejdbc" %% "scalikejdbc"               % "<%= v1_version %>", // or "<%= v18_version %>" only for Scala 2.10
-  "org.scalikejdbc" %% "scalikejdbc-interpolation" % "<%= v1_version %>", // or "<%= v18_version %>" only for Scala 2.10
-  "com.h2database"  %  "h2"                        % "<%= h2_version %>",
-  "ch.qos.logback"  %  "logback-classic"           % "<%= logback_version %>"
+  "org.scalikejdbc" %% "scalikejdbc"               % "<%= @v1_version %>", // or "<%= v18_version %>" only for Scala 2.10
+  "org.scalikejdbc" %% "scalikejdbc-interpolation" % "<%= @v1_version %>", // or "<%= v18_version %>" only for Scala 2.10
+  "com.h2database"  %  "h2"                        % "<%= @h2_version %>",
+  "ch.qos.logback"  %  "logback-classic"           % "<%= @logback_version %>"
 )
 ```
 

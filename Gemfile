@@ -6,7 +6,7 @@ gem 'middleman-syntax'
 gem 'middleman-livereload'
 
 # middleman build -> deploy
-gem 'middleman-deploy'
+gem 'middleman-deploy', "~> 2.0.0.pre.alpha"
 
 gem 'redcarpet'
 

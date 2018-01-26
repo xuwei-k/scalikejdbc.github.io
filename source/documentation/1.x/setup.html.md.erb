@@ -19,8 +19,8 @@ If you're still using Scala 2.9, you can't use `scalikejdbc-interpolation`.
 
 ```
 libraryDependencies ++= Seq(
-  "org.scalikejdbc" %% "scalikejdbc"               % "<%= v1_version %>",
-  "org.scalikejdbc" %% "scalikejdbc-interpolation" % "<%= v1_version %>",
+  "org.scalikejdbc" %% "scalikejdbc"               % "<%= @v1_version %>",
+  "org.scalikejdbc" %% "scalikejdbc-interpolation" % "<%= @v1_version %>",
   "com.h2database"  %  "h2"                        % "1.4.177",
   "ch.qos.logback"  %  "logback-classic"           % "1.1.2"
 )
@@ -40,9 +40,9 @@ Using `scalikejdbc-test` is highly recommended to improve your application.
 
 ```
 libraryDependencies ++= Seq(
-  "org.scalikejdbc" %% "scalikejdbc"               % "<%= v1_version %>",
-  "org.scalikejdbc" %% "scalikejdbc-interpolation" % "<%= v1_version %>",
-  "org.scalikejdbc" %% "scalikejdbc-test"          % "<%= v1_version %>"   % "test",
+  "org.scalikejdbc" %% "scalikejdbc"               % "<%= @v1_version %>",
+  "org.scalikejdbc" %% "scalikejdbc-interpolation" % "<%= @v1_version %>",
+  "org.scalikejdbc" %% "scalikejdbc-test"          % "<%= @v1_version %>"   % "test",
   "com.h2database"  %  "h2"                        % "1.4.177",
   "ch.qos.logback"  %  "logback-classic"           % "1.1.2"
 )
@@ -58,9 +58,9 @@ If you use `application.conf` as settings file, add `scalikejdbc-config` too.
 
 ```
 libraryDependencies ++= Seq(
-  "org.scalikejdbc" %% "scalikejdbc"               % "<%= v1_version %>",
-  "org.scalikejdbc" %% "scalikejdbc-interpolation" % "<%= v1_version %>",
-  "org.scalikejdbc" %% "scalikejdbc-config"        % "<%= v1_version %>",
+  "org.scalikejdbc" %% "scalikejdbc"               % "<%= @v1_version %>",
+  "org.scalikejdbc" %% "scalikejdbc-interpolation" % "<%= @v1_version %>",
+  "org.scalikejdbc" %% "scalikejdbc-config"        % "<%= @v1_version %>",
   "com.h2database"  %  "h2"                        % "1.4.177",
   "ch.qos.logback"  %  "logback-classic"           % "1.1.2"
 )
@@ -120,9 +120,9 @@ Add `scalikejdbc-play-plugin` and `scalikejdbc-play-fixture-plugin` (optional) a
 
 ```
 val appDependencies = Seq(
-  "org.scalikejdbc" %% "scalikejdbc"                     % "<%= v1_version %>",
-  "org.scalikejdbc" %% "scalikejdbc-play-plugin"         % "<%= v1_version %>",
-  "org.scalikejdbc" %% "scalikejdbc-play-fixture-plugin" % "<%= v1_version %>", // optional
+  "org.scalikejdbc" %% "scalikejdbc"                     % "<%= @v1_version %>",
+  "org.scalikejdbc" %% "scalikejdbc-play-plugin"         % "<%= @v1_version %>",
+  "org.scalikejdbc" %% "scalikejdbc-play-fixture-plugin" % "<%= @v1_version %>", // optional
   // substitute this for whatever DB driver you're using:
   "com.h2database"  %  "h2"                              % "1.4.177"
 )
